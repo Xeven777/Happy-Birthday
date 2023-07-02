@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('backg.jpg') no-repeat;
+    background: url('backg.jpg') no-repeat center;
     background-size: cover;
     background-position: center;
 }
@@ -35,31 +35,19 @@ header {
     margin: 0 7px;
     text-decoration: none;
     padding: 6px 20px;
+    transition: all 0.3s ease-in-out;
 }
 
-.navigation a span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #4df0cd;
-    border-radius: 7px;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0.5s;
+.navigation a:hover {
+    text-shadow: 0 0 20px #6984fa;
 }
 
-.navigation a:hover span {
-    transform: scale(1);
-    opacity: 1;
-}
 
 .text h1 {
     font-size: 9em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins";
     text-align: center;
-    -webkit-text-stroke: 2px lightseagreen;
+    -webkit-text-stroke: 2px rgb(0, 101, 141);
     color: transparent;
     background: url('back.png');
     -webkit-background-clip: text;
